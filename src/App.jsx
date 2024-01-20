@@ -6,11 +6,14 @@ import RecentArticle from './pages/recentArticle'
 import ReactHooksPage from './pages/articles/react/ReactHooksPage'
 import GuideCompletNode from './pages/articles/nodejs/GuideCompletNode'
 import DeveloppementWebBasics from './pages/articles/developpementWeb/DeveloppementWebBasics'
+import { Analytics } from '@vercel/analytics/react';
+
 
 function App() {
 
   return (
     <>
+     <Analytics />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/article/Découvrir React Hooks" element={<ReactHooksPage />} />
